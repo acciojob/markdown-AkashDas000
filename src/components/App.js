@@ -10,7 +10,7 @@ const App = () => {
         <div style={{display: 'flex'}}> 
         <MarkdownEditor input={input} setInput={setInput}/>
         <div className='preview'>
-            <h2>{input}</h2>
+            <h1>{input}</h1>
         </div>
         </div>
     </div>
