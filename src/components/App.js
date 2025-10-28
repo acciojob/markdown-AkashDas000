@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import MarkdownEditor from './MarkdownEditor'
+import ReactMarkdown from 'react-markdown'
 
 const App = () => {
 
@@ -10,7 +11,7 @@ const App = () => {
         <div style={{display: 'flex'}}> 
         <MarkdownEditor input={input} setInput={setInput}/>
         <div className='preview'>
-            <h1>{input}</h1>
+            <ReactMarkdown>{input}</ReactMarkdown>
         </div>
         </div>
     </div>
